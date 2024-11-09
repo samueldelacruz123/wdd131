@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Samuel Dela Cruz. This assignment allows me to demonstrate my prerequisite knowledge by applying HTML and CSS in the design and development of a home page.">
+    <meta name="author" content="Samuel Dela Cruz">
+    <title>WDD 131 - Dynamic Web Fundamentals - Samuel Dela Cruz</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Samuel Dela Cruz</h1>
+        <nav class="navigation">
+            <a href="https://www.linkedin.com/in/samuel-dela-cruz-6363aa303/" target="_blank">LinkedIn</a>
+            <a href="https://byui.instructure.com/" target="_blank">I-learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+            <a href="index.html">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card-1">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="images\About-me-pic.png" alt="A picture of Samuel Dela Cruz" class="about-image">
+                    <p>My name is Sam and I'm currently a student at BYU Idaho. I'm an online student and I currently reside in the Philippines. I was married to my wife more than a year ago. And we are just starting out in raising our own family. I love to read and learn new things.</p>
+                </div>
+            </div>
+            
+            <div class="about-my-country">
+                <h2>Nueva Vizcaya, Philippines</h2>
+                <div class="about-content">
+                    <img src="images/Flag_of_the_Philippines.svg.png" alt="A picture of the Philippine flag" class="about-image">
+                    <p>The Philippines is one of the countries within the Pacific Ring of Fire. It has 7,107 islands and tens and hundreds of different languages and dialects. The Filipinos are best known for their warm smiles and hospitality.</p>
+                </div>
+            </div>
+        </section>        
+
+        <section class="card-2">
+            <h2>Web Dev Resources</h2>
+            <nav class="navigation-to-resources">
+                <ul>
+                    <li><a href="https://github.com/swirlai/swirl-search" target="_blank">Swirl</a></li>
+                    <li><a href="https://cssgradient.io/" target="_blank">CSS Gradient</a></li>
+                    <li><a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span class="separator">♣</span> Samuel Dela Cruz <span class="separator">♣</span> Philippines</p>
+        <p>Last modified on <span id="last-modified"></span>.</p>
+    </footer>
+    
+    <section class="footer-extension"></section>    
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentyear').textContent = currentYear;
+
+        const lastModified = document.lastModified;
+        document.getElementById('last-modified').textContent = lastModified;
+    </script>
+</body>
+</html>
