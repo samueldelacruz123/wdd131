@@ -29,7 +29,15 @@
         </aside>
     </main>
     <footer>
-        <p>Footer Content</p>
+        <p>&copy; <span id="year"></span> Samuel Dela Cruz. Last modified on <span id="last-modified"></span>.</p>
     </footer>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('year').textContent = currentYear;
+
+        const lastModified = document.lastModified;
+        document.getElementById('last-modified').textContent = lastModified;
+    </script>
 </body>
 </html>
