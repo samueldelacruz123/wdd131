@@ -1,0 +1,85 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Large View Styles */
+@media (min-width: 600px) { 
+    #menu {
+        display: none; /* Hide hamburger button */
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .top-layer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        position: static;
+    }
+
+    /* Title (h1) */
+    .top-layer h1 {
+        flex-grow: 1; /* Makes the title take up available space on the left */
+        text-align: left;
+        margin: 0;
+    }
+
+    /* Navigation menu */
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        position: static;
+        background: none;
+        margin: 0;
+        width: auto;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 20px;
+        padding-right: 50px;
+        margin: 0;
+    }
+
+    .navigation ul li {
+        padding: 0;
+    }
+
+    .navigation ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .navigation ul li a:hover {
+        background-color: #555;
+    }
+
+    /* Main content grid with multiple columns for larger screens */
+    main {
+        display: grid;
+    }
+
+    .temple-gallery {
+        display: grid;
+        min-width: 30rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .temple-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 20px;
+    }
+}
