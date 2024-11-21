@@ -1,0 +1,70 @@
+/* place-large.css */
+
+@media (min-width: 768px) {
+    body {
+        margin: 0 auto;
+        max-width: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .hero {
+        grid-column: span 2;
+    }
+
+    .data, .weather {
+        margin: 0;
+    }
+
+    .weather h2::after {
+        content: "";
+    }
+
+    footer {
+        font-size: 1rem;
+        color: var(--white);
+        font-weight: bolder;
+    }
+
+    /* Add styles for large screen view */
+
+    .hero {
+        position: relative;
+    }
+
+    /* Style the data class */
+    .data {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 25%;
+    }
+
+    /* Style the weather class */
+    .weather {
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 25%;
+    }
+
+    /* Additional styling for hero image to ensure proper layout */
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+}

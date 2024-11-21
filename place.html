@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The page is about a country or place where you live, have visited, or wish to visit.">
+    <meta name="author" content="Samuel Dela Cruz">
+    <title>My Place Webpage</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+</head>
+<body>
+    <header>
+        <h1>Philippines⭐⭐⭐</h1>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+                <img src="images/hero.webp" alt="Lemur in Madagascar" width="100%" height="auto">
+            </picture>
+        </div>
+
+        <!-- Data Section -->
+        <div class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 300,000 sq km</p>
+            <p><strong>Population:</strong> 117,300,000</p>
+            <p><strong>Capital:</strong> Manila</p>
+            <p><strong>Languages:</strong> Filipino, English</p>
+            <p><strong>Currency:</strong> Philippine Peso</p>
+            <p><strong>Time Zone:</strong> GMT+8</p>
+            <p><strong>Calling Code:</strong> +63</p>
+            <p><strong>Internet TLD:</strong> .ph</p>
+        </div>
+
+        <!-- Weather Section -->
+        <div class="weather">
+            <h2>Weather ⛅</h2>
+            <p><strong>Temperature:</strong> 10°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> 5 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span class="separator">♣</span> Samuel Dela Cruz <span class="separator">♣</span> Madagascar</p>
+        <p>Last modified on <span id="last-modified"></span></p>
+    </footer> 
+
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
