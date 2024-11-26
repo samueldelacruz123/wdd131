@@ -3,6 +3,8 @@
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Base font size for better readability */
+    line-height: 1.6; /* Line height for easier readability */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -13,6 +15,7 @@ h1 {
     font-weight: 700;
 }
 
+/* Hamburger Button */
 #menu {
     font-size: 1.5rem;
     background: none;
@@ -81,9 +84,11 @@ h1 {
     display: block;
 }
 
-.navigation ul li a:hover {
+.navigation ul li a:hover,
+.navigation ul li a:focus {
     background-color: #555;
     transition: background-color 0.3s ease;
+    outline: 2px solid #FFD700; /* Golden outline for focus state */
 }
 
 /* Main Content Layout using Grid */

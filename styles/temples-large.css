@@ -54,12 +54,14 @@ html, body {
     .navigation ul li a {
         color: white;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 20px; /* Slightly larger font on larger screens */
         font-weight: 600;
     }
 
-    .navigation ul li a:hover {
+    .navigation ul li a:hover,
+    .navigation ul li a:focus {
         background-color: #555;
+        outline: 2px solid #FFD700; /* Golden outline for focus state */
     }
 
     /* Main content grid with multiple columns for larger screens */
