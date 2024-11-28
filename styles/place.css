@@ -61,3 +61,26 @@ footer {
     padding: 1rem 0;
     font-size: 0.9rem;
 }
+
+/* Weather Icon styles */
+.weather-icon {
+    margin-top: 1rem;
+    text-align: center;
+    display: none;
+}
+
+/* Hide the weather text icon (⛅) on mobile */
+.weather-text-icon {
+    display: inline;
+}
+
+/* Show the weather icon (SVG) only on mobile */
+@media (max-width: 767px) {
+    .weather-text-icon {
+        display: none;
+    }
+
+    .weather-icon {
+        display: block;
+    }
+}
