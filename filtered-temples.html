@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the beauty of Urdaneta Temple in the Philippines through this photo album showcasing detailed views of its architecture and surroundings.">
+    <meta name="author" content="Samuel Dela Cruz">
+    <title>Philippines Urdaneta Temple Photo Album</title>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+    <header>
+        <div class="top-layer">
+            <h1>Temple Album</h1>
+            <button id="menu" aria-label="Toggle menu"></button> <!-- Hamburger button -->
+            <nav class="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#" title="Home" aria-label="Go to homepage">Home</a></li>
+                    <li><a href="#" title="Old temples" aria-label="Go to Old temples page">Old</a></li>
+                    <li><a href="#" title="New temples" aria-label="Go to New temples page">New</a></li>
+                    <li><a href="#" title="Large view" aria-label="Go to Large view page">Large</a></li>
+                    <li><a href="#" title="Small view" aria-label="Go to Small view page">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+
+    <main>
+        <h2>Temple Gallery</h2> <!-- Improved heading -->
+        <section class="temple-gallery">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Samuel Dela Cruz ♠ Philippines ♠ Last modified on <span id="last-modified"></span> ♠</p>
+    </footer>
+
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "ImageGallery",
+      "name": "Temple Gallery",
+      "url": "https://samueldelacruz123.github.io/wdd131/filtered-temples.html",
+      "description": "Explore the beauty of Temples through this photo album showcasing detailed views of its architecture and surroundings.",
+    }
+    </script>  
+</body>
+</html>
