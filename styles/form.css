@@ -18,6 +18,15 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: #6b4ca3;
+    margin-bottom: 20px;
+}
+
 /* Form Container */
 form {
     background-color: #e6e0eb;
