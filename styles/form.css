@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Form Container */
+form {
+    background-color: #e6e0eb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Elements Spacing */
+form > * {
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Labels */
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #4a4a4a;
+}
+
+/* Select Dropdown */
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: white;
+}
+
+/* Fieldset for Grouping */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Legend for Fieldset */
+legend {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4a4a4a;
+}
+
+/* Radio and Checkbox Inputs */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Date Picker */
+input[type="date"], 
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Textarea for Written Review */
+textarea {
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #6b4ca3;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #55388e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Ensure footer and form are stacked vertically */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px; /* Add space between form and footer */
+}
+
+/* Review Page Styling */
+#review-confirmation {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#review-confirmation h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#review-confirmation p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#review-confirmation a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#review-confirmation a:hover {
+    background-color: #45a049;
+}

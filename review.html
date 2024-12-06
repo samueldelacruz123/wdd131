@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <div id="review-confirmation">
+        <h1>Thank you for your review!</h1>
+        <p>You have submitted <span id="review-count"></span> reviews.</p>
+        <a href="form.html">Submit another review</a>
+    </div>
+
+    <script>
+        // Increment review counter in localStorage
+        const reviewCountKey = "reviewCount";
+        let reviewCount = localStorage.getItem(reviewCountKey);
+
+        // If no counter exists, initialize it to 0
+        if (!reviewCount) {
+            reviewCount = 0;
+        }
+
+        // Increment the counter
+        reviewCount++;
+        localStorage.setItem(reviewCountKey, reviewCount);
+
+        // Display the counter on the page
+        document.getElementById("review-count").textContent = reviewCount;
+    </script>
+</body>
+</html>
