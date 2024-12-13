@@ -9,16 +9,10 @@
     gap: 2rem;
 }
 
-.first-person-video {
+.first-person-image {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-}
-
-.first-person-video iframe {
-    width: 100%;
-    height: 560px;
-    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
