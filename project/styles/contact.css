@@ -129,7 +129,7 @@ body {
 .btn-submit {
     padding: 0.75rem 2rem;
     font-size: 1rem;
-    color: white;
+    color: #fff;
     background-color: var(--highlight-color);
     border: none;
     border-radius: 8px;
