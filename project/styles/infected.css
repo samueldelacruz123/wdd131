@@ -11,9 +11,13 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
 }
+
 
 .infected {
     display: flex;
@@ -28,13 +32,12 @@
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     position: relative;
-    width: 200px;
-    height: 300px;
+    width: 15rem;
+    height: 400px;
 }
 
 .infected img {
-    width: auto;
-    max-width: 170px;
+    max-width: 150px;
     max-height: auto;
     border-radius: 8px;
 }
@@ -53,7 +56,7 @@
 }
 
 .details img {
-    width: 80px;
+    width: 50px;
     border-radius: 8px;
     padding-top: 1rem;
 }
